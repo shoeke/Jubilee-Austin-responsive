@@ -187,7 +187,7 @@ h1 span {
   padding: 10% 0;
 }
 .mail-img {
-  background-image: url("../images-icons/icon-envelope.png");
+  background-image: url("../images-icons/icons copy/email.svg");
   width: 70px;
   height: 70px;
   background-repeat: no-repeat;
@@ -203,13 +203,42 @@ h1 span {
 .social {
   padding: 4rem 0;
   border-top: 7px solid var(--dk-coral);
+  /*display: flex;
+  justify-content: center;*/
 
 }
 .social-icons {
   height: 180px;
   padding-top: 2rem;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 850px;
+  margin: 0 auto;
 
+}
+.scon {
+  display: flex;
+  width: 15%;
+  max-width: 100px;
+  height: 46%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.twitter {
+  background-image: url("../images-icons/icons copy/TwitterIcon.svg");
+}
+.tumbler {
+  background-image: url("../images-icons/icons copy/TumblerIcon.svg");
+}
+.ig {
+  background-image: url("../images-icons/icons copy/IGIcon.svg");
+}
+.linkedin {
+  background-image: url("../images-icons/icons copy/LinkedInIcon.svg");
+}
+.git {
+  background-image: url("../images-icons/icons copy/GitIcon.svg");
 }
 .social-icons img {
   padding: 1rem;
