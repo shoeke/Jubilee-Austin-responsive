@@ -184,12 +184,12 @@ h1 span {
 }
 .email {
   margin: 0 auto;
-  padding: 10% 0;
+  padding: 5% 0 10% 0;
 }
 .mail-img {
   background-image: url("../images-icons/icons copy/email.svg");
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 78px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -209,12 +209,12 @@ h1 span {
 }
 .social-icons {
   height: 180px;
-  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 850px;
   margin: 0 auto;
+  margin-top: 40px;
 
 }
 .scon {
