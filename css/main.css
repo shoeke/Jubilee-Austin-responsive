@@ -72,19 +72,21 @@ p {
 }
 header {
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .logotype {
   display: inline-block;
   font-family: var(--display-font);
   font-size: 1.5em;
   color: var(--nav-color);
-  float: left;
+  /*float: left;*/
+  width: 75%;
 }
 /* on click, hide hamburger menu and reveal site menu. on mobile and tablet only*/
 
 #burger {
-  float: right;
-  width: 15%;
+  /*float: right;*/
   max-width: 64px;
   fill: #6f9e79;
   display: block;
@@ -94,21 +96,31 @@ header {
 }
 #hamburger {
   display: block;
+  width: 15%;
 }
 
-/*#hamburger:hover + nav, nav:hover {
-  display: block;
-}*/
-
-
+.topper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 nav ul {
   list-style-type: none;
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  padding: 0;
+}
+nav li {
   background-color: var(--nav-color);
+  width: 220px;
+  padding: .25% 10% .25% 10%;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 nav a {
   color: black;
@@ -118,9 +130,9 @@ nav a {
   color: #fff;
   text-transform: uppercase;
 }
-nav a:hover {
+/*nav a:hover {
   color: var(--text-color);
-}
+}*/
 
 h1 span {
   color: black;
@@ -252,7 +264,7 @@ h1 span {
   padding: 1rem;
 }
 
-/* TABLET Media Query */
+/* Between Media Query */
 @media only screen and (min-width: 500px) {
   html {
     font-size: 16px;
@@ -264,6 +276,25 @@ h1 span {
     font-size: 1.15rem;
   }
 }
+/* TABLET Media Query*/
+@media only screen and (min-width: 500px){
+  #phoneNav {
+    display: block;
+    padding-top: 0px;
+  }
+  #hamburger {
+    display: none;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
 
 /* DESKTOP Media Query */
 @media only screen and (min-width: 900px) {
@@ -273,6 +304,10 @@ h1 span {
   p {
     font-size: 1rem;
   }
+  header {
+    /*font-size: 1.25rem;*/
+  }
+
   .about, .skills {
     max-width: 1300px;
     margin: 0 auto;
@@ -285,13 +320,13 @@ h1 span {
   }
   .about-text {
     display: flex;
-    padding: 2% 12% 2% 12%;
+    padding: 2% 7% 2% 7%;
     justify-content: space-around;
     border-top: 4px solid var(--dk-coral);
   }
   .about p {
     width: 42%;
-    font-size: .85em;
+    font-size: 1em;
     padding-top: 1em;
   }
   .skills {
