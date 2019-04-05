@@ -80,13 +80,11 @@ header {
   font-family: var(--display-font);
   font-size: 1.5em;
   color: var(--nav-color);
-  /*float: left;*/
   width: 75%;
 }
 /* on click, hide hamburger menu and reveal site menu. on mobile and tablet only*/
 
 #burger {
-  /*float: right;*/
   max-width: 64px;
   fill: #6f9e79;
   display: block;
@@ -206,6 +204,7 @@ h1 span {
   height: 78px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin: 0 auto;
 }
 .mail-link {
@@ -216,7 +215,7 @@ h1 span {
   width: 40%;
   align-items: center;
 }
-.email a {
+.email  {
   text-decoration: none;
 }
 .social {
@@ -314,9 +313,11 @@ h1 span {
   header {
     /*font-size: 1.25rem;*/
   }
-
+  nav li {
+    width: 33%;
+  }
   .about, .skills {
-    max-width: 1300px;
+    max-width: 1600px;
     margin: 0 auto;
   }
 
@@ -327,7 +328,7 @@ h1 span {
     border-top: 4px solid var(--dk-coral);
   }
   .about p {
-    width: 42%;
+    width: 45%;
     font-size: 1em;
     padding-top: 1em;
   }
