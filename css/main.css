@@ -17,6 +17,9 @@
 html {
   font-size: 16px;
 }
+body {
+  width: 100%;
+}
 
 h1, h2, h3, h4, h5, p {
   padding: 0;
@@ -170,7 +173,7 @@ h1 span {
     position: relative;
     background: var(--lt-grey-bg);
     overflow: hidden;
-    padding: 10% 10% 5% 10%;
+    padding: 10% 10% 1% 10%;
     margin: 0 auto;
     text-align: center;
     z-index: 2;
@@ -220,7 +223,7 @@ h1 span {
   flex-wrap: wrap;
   max-width: 850px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
 
 }
 .scon {
@@ -253,7 +256,7 @@ h1 span {
 /* TABLET Media Query */
 @media only screen and (min-width: 500px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
   h1 {
     font-size: 2.5rem;
@@ -261,6 +264,57 @@ h1 span {
   p {
     font-size: 1.15rem;
   }
+}
 
-
+/* DESKTOP Media Query */
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .about, .skills {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .about h2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 1.35em;
+  }
+  .about-text {
+    display: flex;
+    padding: 2% 12% 2% 12%;
+    justify-content: space-around;
+    border-top: 4px solid var(--dk-coral);
+  }
+  .about p {
+    width: 42%;
+    font-size: .85em;
+    padding-top: 1em;
+  }
+  .skills {
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: .85rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    max-width:
+  }
+  .tidy-box {
+    flex-direction: column;
+    width: 35%;
+    padding: 4rem 0rem;
+    margin: 0 5% 0 5%;
+  }
+}
+/* XLG Media Query */
+@media only screen and (min-width: 1920px) {
+  body {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }
