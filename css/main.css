@@ -222,12 +222,10 @@ h1 span {
 .social {
   padding: 4rem 0;
   border-top: 7px solid var(--dk-coral);
-  /*display: flex;
-  justify-content: center;*/
-
 }
 .social-icons {
-  height: 100px;
+  height: 85px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,6 +302,15 @@ h1 span {
   p {
     font-size: 1rem;
   }
+  h2  {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 1.35em;
+  }
+  h3, h4 {
+    font-size: 1.2em;
+  }
   header {
     /*font-size: 1.25rem;*/
   }
@@ -312,12 +319,7 @@ h1 span {
     max-width: 1300px;
     margin: 0 auto;
   }
-  .about h2 {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    font-size: 1.35em;
-  }
+
   .about-text {
     display: flex;
     padding: 2% 7% 2% 7%;
