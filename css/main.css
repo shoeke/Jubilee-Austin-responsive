@@ -194,11 +194,16 @@ h1 span {
   background-size: cover;
   margin: 0 auto;
 }
-.email a{
-  text-decoration: none;
+.mail-link {
   color: var(--dk-coral);
   margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+.email a {
+  text-decoration: none;
 }
 .social {
   padding: 4rem 0;
@@ -208,9 +213,10 @@ h1 span {
 
 }
 .social-icons {
-  height: 180px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 850px;
   margin: 0 auto;
@@ -221,7 +227,7 @@ h1 span {
   display: flex;
   width: 15%;
   max-width: 100px;
-  height: 46%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
